@@ -1,0 +1,1 @@
+This Project aims to revolutionize the dining reservation experience by offering a sophisticated platform that incorporates critical features. Currently working on this project. The project includes technologies such as HTML, CSS, JavaScript. 
