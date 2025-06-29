@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking</title>
+    <link rel="stylesheet" href="stylebooktable.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EazyEats</h1>
+        </header>
+        <form action="http://localhost:5001/api/book-table" method="POST">
+
+            <h2>Book Your Table</h2>
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Booking Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Booking Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn"><a href="index.html" style="text-decoration: none;">Book Now</a></button>
+            </div>
+            <div class="form-group">
+                <button type="Back" class="Back-btn"><a href="index.html" style="text-decoration: none;">Back</a></button>
+            </div>
+        </form>
+    </div>
+    <script>
+        let btn = document.querySelector(".submit-btn");
+
+        btn.onclick = function(){
+            alert("Your table is booked");
+        };
+    </script>
+</body>
+</html>
